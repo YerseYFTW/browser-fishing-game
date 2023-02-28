@@ -37,6 +37,8 @@ textscore.innerText = "Pesti retinuti: "+ scor;
   if(aiprins.style.opacity == 0){ //trb sa adaug ca sa nu poara sa dea click de mai multe ori
   texthere.innerText = "Asteapta...";
   afisajrun();
+  setInterval(drawlinee, 10); //repet functia de desen pt linie
+  setTimeout(drawlinee, 3000); // pun timeout pt desen linie
   setTimeout(afisaj3,2900);
   setTimeout(afisaj2, 5000);
   afisarefull();
@@ -117,6 +119,23 @@ newimg.onload = function(){
 
 }
 
-//pentru scor si text de asteptare
+//afisare fir pescuit
+
+const drawlinie = document.getElementById("drawline");
+const ctxdrawl = drawlinie.getContext("2d");
+const drwlnx = bobber.x;
+const drwlny = bobber.y
+
+//bobber.getBoundingClientRect().x;
+//bobber.getBoundingClientRect().y;
+function drawlinee(){ 
+  ctxdrawl.beginPath();
+  ctxdrawl.clearRect(0,0,1080,720);
+  ctxdrawl.moveTo(312, 379);
+  ctxdrawl.lineTo(bobber.getBoundingClientRect().x ,bobber.getBoundingClientRect().y);
+  ctxdrawl.stroke();
+ 
+}
+
 
 

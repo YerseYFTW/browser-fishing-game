@@ -1,0 +1,121 @@
+#texthere{
+    position:absolute;
+    top: 565 ;
+    left: 550 ;
+}
+
+#textscore{
+    position:absolute;
+    top: 350 ;
+    left: 20 ;
+}
+
+#clickk{
+    height: 200px;
+    width: 650px;
+   /* background-color: aqua; */ 
+    position:absolute;
+    opacity:0;
+    top:520;
+    left:400;  
+} 
+
+#afisare{
+    height: 350px;
+    width: 450px;
+    position:absolute;
+    background-color: aqua;
+    border: 1.5px solid black;
+    opacity:100;
+    top:150;
+    left:300;
+}
+
+/*#butonafisarex{
+    height:30;
+    width: 30;
+    background-color: red;
+    opacity: 100;
+    top: 150;
+    left: 720;
+    position:absolute;
+} */
+
+#aiprins{
+    opacity: 0;
+
+}
+
+#fisherman{
+    position:absolute;
+    top:345;
+    left: 130;
+}
+
+#curbalure{
+    position: absolute;
+    stroke: black; 
+    fill: transparent;
+}
+
+#lure{
+    top: 305;
+    left: 310;
+    position: absolute;  
+}
+
+#bobber{
+    width: 8px;
+    height: 8px;
+    position:absolute;
+    background-color: red;
+    border-radius: 50%;
+    offset-path: path("M 10 80 Q 100 10, 300 300");
+    animation: move 3s normal;
+    animation-play-state: paused;
+    animation-iteration-count: infinite;
+    /*animation-fill-mode: null; */
+
+}
+
+@keyframes move {
+    0% {
+        offset-distance: 0%;
+    }
+    100% {
+        offset-distance: 100%;
+    }
+}
+
+#pesteprins{
+    width:300;
+    height: 170;
+    position: absolute;
+    top:150;
+    left:375;
+}
+
+#ceaiprins{
+    position:absolute;
+    top:300;
+    left:455;
+}
+
+#keepfish{
+    height:50 ;
+    width:150 ;
+    position: absolute;
+    border: 1.5px solid  black;
+    top:380;
+    left:350;
+
+}
+
+#releasefish{
+    height:50 ;
+    width:150 ;
+    position: absolute;
+    border: 1.5px solid  black;
+    top:380;
+    left:550;
+}
